@@ -46,11 +46,14 @@
       <button id="altButton">alt</button> and arrow keys to strafe (if your browser does not handle these keys otherwise). 
       On mobile (and mobile only) touch the buttons above. Yeah, I'm not good a UX design.</p>
     <div class="container">
-      <canvas id="screen" width="640" height="400" tabindex="0">This is where the DooM screen should render.</canvas>
+      <canvas id="screen" width="1280" height="800" tabindex="0">This is where the DooM screen should render.</canvas>
       <span>&nbsp;</span>
-     
-    <div>
-    
+      <div id="output"></div>
+    </div>
+    gettmilliseconds calls per second: <span id="getmsps_stats">0</span> Total getmilliseconds calls: <span id="getms_stats">0</span><br>
+    DooM FPS: <span id="fps_stats">0</span> (target: 35FPS) Total Frames drawn: <span id="drawframes_stats">0</span><br>
+    Browser Animation FPS: <span id="animationfps_stats">0</span> (target: around 60FPS, depending on browser)<br>
+
     <script src="main.js" defer></script>
   </body>
 
